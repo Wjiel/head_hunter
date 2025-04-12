@@ -21,7 +21,7 @@ class Carousel extends StatelessWidget {
 List<Map<String, dynamic>> _item = [
   {
     'image': 'assets/images/image 6.png',
-    'text': 'Лучшая платформа для сантехников в 2025 году!'
+    'text': 'Лучшая платформа для слесарей в 2025 году!'
   },
   {
     'image': 'assets/images/image 8.png',

@@ -25,7 +25,7 @@ class StartScreen extends StatelessWidget {
               ),
               children: <TextSpan>[
                 TextSpan(
-                  text: 'сантехник.',
+                  text: 'найдись.',
                 ),
                 TextSpan(
                   text: 'ру',
