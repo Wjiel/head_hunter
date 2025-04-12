@@ -73,17 +73,45 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+  fonts:
+    - family: RobotoSlab
+      fonts:
+        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Roboto_Slab/RobotoSlab-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Black.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto_Slab/RobotoSlab-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Roboto_Slab/RobotoSlab-SemiBold.ttf
+          weight: 900
+
+    - family: RobotoSerif
+      fonts:
+        - asset: assets/fonts/Roboto_Serif/RobotoSerif-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Roboto_Serif/RobotoSerif-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Roboto_Serif/RobotoSerif-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Roboto_Serif/RobotoSerif-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto_Serif/RobotoSerif-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto_Serif/RobotoSerif-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Roboto_Serif/RobotoSerif-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto_Serif/RobotoSerif-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Roboto_Serif/RobotoSerif-Black.ttf
+          weight: 900
