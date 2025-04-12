@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:head_hunter/colors.dart';
 import 'package:head_hunter/custom_widgets/buttons/CustomButtonSign.dart';
+import 'package:head_hunter/entry_screen/EntryScreen.dart';
 
 class SignInUp extends StatelessWidget {
   const SignInUp({super.key});
@@ -10,7 +11,14 @@ class SignInUp extends StatelessWidget {
     return Column(
       children: [
         CustomButtonSign(
-          function: ((){}),
+          function: (() {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => EntryScreen(),
+              ),
+            );
+          }),
           inputWords: 'Войти',
         ),
         SizedBox(
