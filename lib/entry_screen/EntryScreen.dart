@@ -33,6 +33,11 @@ class EntryScreen extends StatelessWidget {
                   hint: 'dsadasd@gmail.com',
                   controller: TextEditingController(),
                 ),
+                SizedBox(height: 25),
+                CustomTextField(
+                  hint: 'verystrongpassword',
+                  controller: TextEditingController(),
+                ),
               ],
             ),
           ),
