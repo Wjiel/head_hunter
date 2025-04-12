@@ -9,7 +9,6 @@ class Carousel extends StatelessWidget {
     return SizedBox(
       height: 429,
       child: CarouselView.weighted(
-          padding: EdgeInsets.only(left: 19),
           itemSnapping: true,
           enableSplash: false,
           flexWeights: [3, 1],
@@ -21,15 +20,15 @@ class Carousel extends StatelessWidget {
 
 List<Map<String, dynamic>> _item = [
   {
-    'image': 'assets/images/santehnik1.png',
+    'image': 'assets/images/image 6.png',
     'text': 'Лучшая платформа для сантехников в 2025 году!'
   },
   {
-    'image': 'assets/images/santehnik2.png',
+    'image': 'assets/images/image 8.png',
     'text': 'Помогаем не только клиентам, но и работникам!'
   },
   {
-    'image': 'assets/images/santehnik3.png',
+    'image': 'assets/images/image 9.png',
     'text': 'Выбирай стабильный заработок и комфорт!'
   },
 ];

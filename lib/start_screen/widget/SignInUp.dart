@@ -15,7 +15,9 @@ class SignInUp extends StatelessWidget {
       ),
       child: Column(
         children: [
-          CustomButtonSign(inputWords: 'Войти',),
+          CustomButtonSign(
+            inputWords: 'Войти',
+          ),
           SizedBox(
             height: 15,
           ),
@@ -43,56 +45,8 @@ class SignInUp extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            height: 25,
-          ),
-          Text(
-            'или',
-            style: TextStyle(
-                color: darkSign,
-                fontFamily: 'RobotoSlab',
-                fontSize: 16,
-                fontWeight: FontWeight.w500,),
-          ),
-          SizedBox(
-            height: 25,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            spacing: 40,
-            children: List.generate(3, (index) => _microItem(strigImage: _pictureForSign[index])),
-          )
         ],
       ),
     );
   }
 }
-
-class _microItem extends StatelessWidget {
-  final String strigImage;
-  const _microItem({required this.strigImage});
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      borderRadius: BorderRadius.circular(30),
-      onTap: () {},
-      child: Ink(
-        padding: const EdgeInsets.symmetric(vertical: 12.5, horizontal: 12.5),
-        decoration: BoxDecoration(
-          color: const Color(0x3DDDD3B7),
-          shape: BoxShape.circle,
-        ),
-        child: Image.asset(
-          strigImage,
-          filterQuality: FilterQuality.high,
-        ),
-      ),
-    );
-  }
-}
-List<String> _pictureForSign = [
- 'assets/images/yaPNG.png',
- 'assets/images/vkPNG.png',
- 'assets/images/gosPNG.png',
-];
