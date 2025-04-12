@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:head_hunter/custom_widgets/Buttons/CustomFilledButton.dart';
 import 'package:head_hunter/custom_widgets/TextFields/CustomTextField.dart';
 
 class EntryScreen extends StatelessWidget {
@@ -37,6 +38,29 @@ class EntryScreen extends StatelessWidget {
                 CustomTextField(
                   hint: 'verystrongpassword',
                   controller: TextEditingController(),
+                ),
+                SizedBox(height: 15),
+                Row(
+                  children: [
+                    Checkbox(value: false, onChanged: (value) {}),
+                    Text(
+                      'Показать пароль',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w500,
+                        fontFamily: 'RobotoSlab',
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                CustomFilledButton(
+                  text: 'Войти',
+                  textColor: Colors.white,
+                  backgroundColor: Colors.black,
+                  borderRadius: 10,
                 ),
               ],
             ),
