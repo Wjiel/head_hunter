@@ -40,6 +40,7 @@ class StartScreen extends StatelessWidget {
             height: 45,
           ),
           Carousel(),
+          SizedBox(height: 45),
           SignInUp(),
           SizedBox(
             height: 25,

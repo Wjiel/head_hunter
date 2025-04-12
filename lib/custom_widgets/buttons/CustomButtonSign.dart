@@ -4,15 +4,21 @@ import 'package:head_hunter/colors.dart';
 class CustomButtonSign extends StatelessWidget {
   final String inputWords;
   final bool? colorchik;
-  const CustomButtonSign({super.key, required this.inputWords, this.colorchik});
+  final void Function() function;
+  CustomButtonSign(
+      {super.key,
+      required this.inputWords,
+      this.colorchik,
+      required this.function});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(20),
-      onTap: () {}, // Код
+      onTap: () {
+        function();
+      }, // Код
       child: Ink(
-        width: double.infinity,
         padding: EdgeInsets.symmetric(vertical: 14),
         decoration: BoxDecoration(
           color: colorchik ?? false ? lowOrange : highBlue,

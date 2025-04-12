@@ -24,7 +24,6 @@ class Carouselitem extends StatelessWidget {
                 boxShadow: <BoxShadow>[
                   BoxShadow(
                     color: highBlue,
-                    spreadRadius: 0,
                     blurRadius: 116.3,
                   ),
                 ]),
